@@ -1,0 +1,30 @@
+#a1 {
+  float: top;
+  background-color: beige;
+  width: 100%;
+  height: 100px;
+}
+#a2 { 
+  float:left;  
+  background-color:paleturquoise; 
+  width:20%; 
+  height:400px; 
+} 
+#a3 { 
+  float:left;  
+  background-color:lightcyan; 
+  width:60%; 
+  height:400px; 
+} 
+#a4 { 
+  float:right; 
+  background-color:blue; 
+  width:20%; 
+  height:400px; 
+} 
+#a5 {
+  float: bottom;
+  background-color: grey; 
+  width: 100%;
+  height: 100px;
+}
