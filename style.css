@@ -1,0 +1,33 @@
+#a1 {
+  background-color: beige;
+  height: 100px;
+  width: 100%;
+  float: top;
+}
+#a2 {
+  background-color: paleturquoise;
+  top: 200px;
+  left: 0px;
+  width: 200px;
+  height: 800px;
+}
+#a3 {
+  background-color: lightcyan;
+  bottom: 100px;
+  right: 200px;
+  width: 800px;
+  height: 800px;
+
+}
+#a4 {
+  background-color: darkblue;
+  right: 0px;
+  bottom: 10px;
+  width: 200px;
+  height: 800px;
+}
+#a5 {
+    background-color: grey; 
+    float: bottom;
+    height: 100px;
+  }
