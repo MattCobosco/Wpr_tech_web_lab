@@ -16,11 +16,15 @@ body {
     padding-bottom: 20px;
     border-bottom: 1px solid #888;
 }
+#logo {
+    position: static;
+    margin-top: 2%;
+}
 #navigation a {
     text-decoration: none;
     text-transform: uppercase;
+    color: #5094d8;
 }
-
 #news {
     display: flex;
 }
@@ -37,6 +41,7 @@ body {
     height: 200px;
     border-radius: 50%;
     opacity: 0.7;
+    text-align: center;
 }
 #circle1:hover {
     opacity: 0.85;
@@ -48,8 +53,21 @@ body {
     border-radius: 50%;
     opacity: 0.7;
     margin-left: -30px;
+    text-align: center;
 }
 #circle2:hover {
+    opacity: 0.85;
+}
+#circle3 {
+    background-color: #5094d8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+    margin-left: -30px;
+    text-align: center;
+}
+#circle3:hover {
     opacity: 0.85;
 }
 #footer {
