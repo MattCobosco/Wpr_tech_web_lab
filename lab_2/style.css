@@ -142,6 +142,10 @@ body {
     margin-right: 14%;
     font-size: 17px;
 }
+#bottom-section a {
+    text-decoration: none;
+    color: #5094d8;
+}
 #bottom-section1 {
     width: 25%;
 }
