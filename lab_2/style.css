@@ -2,13 +2,13 @@ body {
     margin: 0;
 }
 #main {
-    width: 1000px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 #header-bar {
     height: 8px;
-    background-color: #252627;
+    background-color: grey;
 }
 #header {
     display: flex;
@@ -17,23 +17,69 @@ body {
     border-bottom: 1px solid #888;
 }
 #logo {
-    position: static;
-    margin-top: 2%;
+    margin-top: 4%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-#navigation a {
+#title {
+ position:static;
+ margin-top: 5%;
+}
+#subtitle h2 {
+    color: #5094d8;
+    font-size: 28px;
+    text-align: center;
+}
+#navigation a { /*move  the links down */
     text-decoration: none;
     text-transform: uppercase;
     color: #5094d8;
+    margin: 28%;
+    display: flex;
 }
 #news {
     display: flex;
+    margin-bottom: 3%;
+}
+#news1 {
+    width: 50%;
+    float: left;
+}
+#news2 {
+    width: 50%;
+    float: right;
+    margin-left: 4%;
 }
 #news1 p {
     text-align: center;
+    text-align: start;
+    font-size: 17px;
 }
-#circles {
+#news1 h3 {
+    text-align: start;
+    font-size: 24px;
+}
+#news2 p {
+    text-align: center;
+    text-align: start;
+    font-size: 17px;
+}
+#news2 h3 {
+    text-align: start;
+    font-size: 24px;
+    }
+#body-bar {
+    height: 1px;
+    background-color: grey;
+}
+#circles { /*obniżyć napisy w kołkach*/
     display: flex;
     justify-content: center;
+    margin-top: 5%;
+}
+#circles p{
+    margin-top: 45%;
 }
 #circle1 {
     background-color: #5094d8;
@@ -42,6 +88,8 @@ body {
     border-radius: 50%;
     opacity: 0.7;
     text-align: center;
+    color:white;
+    font-size: 24px;
 }
 #circle1:hover {
     opacity: 0.85;
@@ -54,6 +102,8 @@ body {
     opacity: 0.7;
     margin-left: -30px;
     text-align: center;
+    color:white;
+    font-size: 24px;
 }
 #circle2:hover {
     opacity: 0.85;
@@ -66,16 +116,51 @@ body {
     opacity: 0.7;
     margin-left: -30px;
     text-align: center;
+    color:white;
+    font-size: 24px;
 }
 #circle3:hover {
     opacity: 0.85;
 }
+#bottom-section {
+    display: flex;
+    margin-top: 6%;
+    font: bold;
+    text-decoration: none;
+}
+#bottom-bar {
+    height: 3px;
+    background-color: rgb(182, 179, 179);
+    width: 80%;
+    margin-bottom: 15%;
+}
+#bottom-section h3{
+    text-align: start;
+    font-size: 24px;
+}
+#bottom-section p{
+    margin-right: 12%;
+    font-size: 17px;
+}
+#bottom-section1 {
+    width: 25%;
+}
+#bottom-section2 {
+    width: 25%;
+}
+#bottom-section3 {
+    width: 25%;
+}
+#bottom-section4 {
+    width: 25%;
+}
 #footer {
     background-color: #252627;
-    background-image: url(zabek.jpg);
+    background-image: url(https://github.com/rbrzegowy/wprowadzenie-do-technologii-webowych-2021/blob/master/inf8/lab2/zabek.jpg?raw=true);
     background-repeat: repeat-x;
     height: 200px;
     margin-top: 40px;
-    color: #eee;
+    color: grey;
     padding: 40px;
+    text-align: center;
 }
