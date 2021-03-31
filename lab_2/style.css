@@ -18,7 +18,7 @@ body {
     margin-top: 5%;
 }
 #navigation {
-    display:flex;
+    display: flex;
 }
 #navigation a {
     text-decoration: none;
@@ -73,7 +73,7 @@ body {
     height: 1px;
     background-color: grey;
 }
-#circles { /*obniżyć napisy w kołkach*/
+#circles {
     display: flex;
     justify-content: center;
     margin-top: 5%;
