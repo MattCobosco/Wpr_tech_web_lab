@@ -6,32 +6,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Layer51</title>
         <style>
-            #body {
-                align-items: center;
+            body {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
                 justify-content: center;
-                min-height: 100vh;
-                width: 100%;
-            }
-            #section{
+                height: 100%;
+                color: white;
+            }           
+            section {
                 background-image: url(/lab_3/images/tlo.png);
-                background-position: center center;
+                background-size: cover;
+                height: 100%;
                 background-repeat: no-repeat;
-                height: 900px;
-                width: 1200px;
-                position: relative;
+                background-position: center center;
+                text-align: justify;
+                flex-direction: column;
+                align-content: center;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
             }
             #logo {
-                position: absolute;
-                z-index: 1;
+                width: 50%;
+                margin: auto;
+                text-align: center;
+            }
+            #logo_text{
+                font-size: 10px;
+                text-align: center;
             }
             #photos {
-                position: absolute;
-                z-index: 2;
+                width: 50%;
+                margin: auto;
             }
             #title {
-                position: absolute;
                 text-align: center;
-                z-index: 3;
+                font-size: 20px;
+                width: 50%;
+                margin: auto;
             }
             #bar {
                 background-color: black;
@@ -39,49 +61,49 @@
                 border-color: gray;
                 height: 1px;
                 margin-bottom: 15%;
-                width: 30%;
-                align-items: center;
-                position: absolute;
-                z-index: 4;
+                width: 50%;
+                margin: auto;
             }
             #text {
-                position: absolute;
-                text-align: center;
-                z-index: 5;
+                width: 50%;
+                margin: auto;
             }
             #mail_button {
-                position: absolute;
-                z-index: 6;
+              text-align: center;
             }
             #footer{
-                position: absolute;
                 text-align: center;
-                z-index: 6;
+                width: 50%;
+                margin: auto;
+                color:grey;
+                font-size: 12px;
             }
-        </style>
+        </style> 
     </head>
     <body>
         <section>
             <div id="logo">
                 <img src="/lab_3/images/logo.jpg" alt="Layer51 logo">
-              </div>
-              <div id="photos">
-      
-              </div>
-              <div id="title">
-                  <h1>About Layer 51</h1>
-              </div>
-              <div id="bar">
-              </div>
-              <div id="text">
-                  <p>Layer 51 provides bespoke web design & online strategies to businesses in South Orange County and surrounding areas. Over the years we have found our favorite & most successful work has come from projects where clients were equal partners, matching our enthusiasm for creating delightful and successful online experiences. Not every project works that way and not every client become a collaborator, but it's the way we prefer to work. If you or your organization are looking to a partner with an experienced, talented, dedicated & local web design firm give us a shout, we'd love to get tge chance to meet you and see if we're a good fit.</p>
-              </div>
-              <div id="mail_button">
-      
-              </div>
-              <div id="footer">
-                  <p>Copyright © 2011 Layer 51</p>
-              </div>
+            </div>
+            <div id=logo_text>
+                <p>DESIGN & DEVELOPMENT</p>
+            </div>
+            <div id="photos_container">
+            </div>
+            <div id="title">
+                <p><b>About Layer</b> 51<p>
+            </div>
+            <div id="bar">
+            </div>
+            <div id="text">
+                <p>Layer 51 provides bespoke web design & online strategies to businesses in South Orange County and surrounding areas. Over the years we have found our favorite & most successful work has come from projects where clients were equal partners, matching our enthusiasm for creating delightful and successful online experiences. Not every project works that way and not every client become a collaborator, but it's the way we prefer to work. If you or your organization are looking to a partner with an experienced, talented, dedicated & local web design firm give us a shout, we'd love to get tge chance to meet you and see if we're a good fit.</p>
+            </div>
+            <div id="mail_button">
+                <img src="images/mail.png">
+            </div>
+            <div id="footer">
+                <p>Copyright © 2011 Layer 51</p>
+            </div>
         </section>
     </body>
 </html>
