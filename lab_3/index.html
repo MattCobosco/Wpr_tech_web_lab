@@ -8,7 +8,6 @@
         <style>
             body {
                 display: flex;
-                flex-direction: column;
                 align-content: center;
                 position: absolute;
                 top: 0;
@@ -17,18 +16,14 @@
                 right: 0;
                 margin: auto;
                 justify-content: center;
-                height: 100%;
-                color: white;
+                height: 100vh;
+                color: #999;
             }           
             section {
                 background-image: url(/lab_3/images/tlo.png);
                 background-size: cover;
-                height: 100%;
                 background-repeat: no-repeat;
                 background-position: center center;
-                text-align: justify;
-                flex-direction: column;
-                align-content: center;
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -38,38 +33,90 @@
             }
             #logo {
                 width: 50%;
-                margin: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
                 text-align: center;
             }
             #logo_text{
                 font-size: 10px;
                 text-align: center;
+                margin-bottom: 5%;
             }
             #photos {
+                text-align: center;
+                align-content: center;
+                justify-content: center;
                 width: 50%;
+                height: auto;
                 margin: auto;
+                border: 20px;
+                background-color: white;
+                
+            }
+            #photos_row1 {
+                display: flexbox;
+                padding-top: 2%;
+                padding-right: 2%;
+                padding-left: 2%;
+                padding-bottom: 1%;
+                width: 100%;
+                height: 25%;
+            }
+            #photos_row2 {
+                display: flexbox;
+                padding-top: 1%;
+                padding-right: 2%;
+                padding-left: 2%;
+                padding-bottom: 1%;
+                width: 100%;
+                height: 25%;
+            }
+            #photos_row3 {
+                display: flexbox;
+                padding-top: 1%;
+                padding-right: 2%;
+                padding-left: 2%;
+                padding-bottom: 1%;
+                width: 100%;
+                height: 25%;
+            }
+            #photos_row4 {
+                display: flexbox;
+                padding-top: 1%;
+                padding-right: 2%;
+                padding-left: 2%;
+                padding-bottom: 2%;
+                width: 100%;
+                height: 25%;
             }
             #title {
                 text-align: center;
-                font-size: 20px;
+                font-size: 24px;
                 width: 50%;
-                margin: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 0%;
             }
             #bar {
                 background-color: black;
                 border: 1px solid;
                 border-color: gray;
                 height: 1px;
-                margin-bottom: 15%;
                 width: 50%;
-                margin: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 0%;
             }
             #text {
                 width: 50%;
-                margin: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 0%;
             }
             #mail_button {
               text-align: center;
+              margin: 5%;
             }
             #footer{
                 text-align: center;
@@ -88,7 +135,31 @@
             <div id=logo_text>
                 <p>DESIGN & DEVELOPMENT</p>
             </div>
-            <div id="photos_container">
+            <div id="photos">
+                <div id="photos_row1">
+                    <img src="images/zdjecia/16.jpg" alt="picture1">
+                    <img src="images/zdjecia/15.jpg" alt="picture2">
+                    <img src="images/zdjecia/14.jpg" alt="picture3">
+                    <img src="images/zdjecia/13.jpg" alt="picture4">
+                </div>
+                <div id="photos_row2">
+                    <img src="images/zdjecia/12.jpg" alt="picture5">
+                    <img src="images/zdjecia/11.jpg" alt="picture6">
+                    <img src="images/zdjecia/10.jpg" alt="picture7">
+                    <img src="images/zdjecia/9.jpg" alt="picture8">
+                </div>
+                <div id="photos_row3">
+                    <img src="images/zdjecia/8.jpg" alt="picture9">
+                    <img src="images/zdjecia/7.jpg" alt="picture10">
+                    <img src="images/zdjecia/6.jpg" alt="picture11">
+                    <img src="images/zdjecia/5.jpg" alt="picture12">
+                </div>
+                <div id="photos_row4">
+                    <img src="images/zdjecia/4.jpg" alt="picture13">
+                    <img src="images/zdjecia/3.jpg" alt="picture14">
+                    <img src="images/zdjecia/2.jpg" alt="picture15">
+                    <img src="images/zdjecia/1.jpg" alt="picture16">
+                </div>
             </div>
             <div id="title">
                 <p><b>About Layer</b> 51<p>
