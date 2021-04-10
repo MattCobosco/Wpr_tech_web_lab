@@ -1,7 +1,7 @@
 body {
     text-align: center;
     width: 600px;
-    height:auto;
+    height: auto;
     margin: auto;
     justify-content: center;
 }
@@ -14,32 +14,40 @@ body {
     vertical-align: middle;
     line-height: 30px;
 }
+
 #inbox{
     height:auto;
+    width:inherit;
 }
 .mail{
     height: auto;
     width: auto;
+    background-color: white;
     border-top: 1px;
     border-bottom: 1px;
     border-color: gray;
     border-style: solid;
     display: flex;
     }
-    .mail_date{
+    .mail_txt{
+    flex-flow: column;
+    }
+    .mail_sender{
         text-transform: capitalize;
+        font-size: 18px;
+        color: grey;
     }
     .mail_topic{
-        
+      font-size: 20px;
+      color: black;
     }
     .mail_content{
-        
+      font-size:12px;
+      color: black;
     }
 img{
     height: 20px;
     width: 20px;
     margin: 5px;
-}
-.mail_txt{
-
+    float: right;
 }
