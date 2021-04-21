@@ -1,0 +1,63 @@
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "menu" "inbox";
+    grid-template-columns: 15% 30% auto;
+    grid-template-rows: 100%;
+}
+nav{
+    background-color: #25293C;
+    grid-template-rows: menu;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 10% 20% auto;
+    grid-template-areas: 
+    "compose"
+    "nav_buttons"
+    "labels"
+}
+#compose_section{
+    grid-area: compose;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#compose_button{
+    border-radius:15px;
+    background-color: #0E8EF8;
+    border:0px;
+    color:white;
+    margin-top:20%;
+    padding: 5%;
+}
+#nav_section{
+    grid-area: nav_buttons;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+.nav_button{
+    background-color: transparent;
+    color: white;
+    border:0px;
+}
+#labels_section{
+    grid-area: labels;
+    margin-left: 13%;
+    grid-template-columns:100%;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "private_lbl"
+    "job_lbl"
+    "flights_lbl";
+}
+#labels_section h4{
+    color: #3B5B82;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+article{
+    grid-area: inbox;    
+}
