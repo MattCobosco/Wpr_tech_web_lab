@@ -1,8 +1,8 @@
 main{
     height: 100vh;
     display: grid;
-    grid-template-areas: "menu" "inbox";
-    grid-template-columns: 15% 30% auto;
+    grid-template-areas: "menu" "inbox" "open_mail";
+    grid-template-columns: 10% 25% auto;
     grid-template-rows: 100%;
 }
 nav{
@@ -16,21 +16,24 @@ nav{
     "nav_buttons"
     "labels"
 }
-#compose_section{
+#compose_article{
     grid-area: compose;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #compose_button{
-    border-radius:15px;
     background-color: #0E8EF8;
     border:0px;
+    border-radius:15px;
     color:white;
     margin-top:20%;
-    padding: 5%;
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
 }
-#nav_section{
+#nav_article{
     grid-area: nav_buttons;
     display: flex;
     flex-direction: column;
@@ -42,22 +45,135 @@ nav{
     background-color: transparent;
     color: white;
     border:0px;
+    font-size: 20px;
 }
-#labels_section{
+#labels_article{
     grid-area: labels;
     margin-left: 13%;
-    grid-template-columns:100%;
+    grid-template-columns:5% auto;
     grid-template-rows: repeat(3,1fr);
     grid-template-areas: 
-    "private_lbl"
-    "job_lbl"
-    "flights_lbl";
+    "square_yellow private_label"
+    "square_blue job_label"
+    "square_green flights_label";
 }
-#labels_section h4{
+#labels_article h4{
     color: #3B5B82;
     text-transform: uppercase;
     text-decoration: none;
 }
-article{
-    grid-area: inbox;    
+.label_button{
+    background-color: transparent;
+    color: white;
+    border:0px;
+    font-size:20px;
+    align-self: end;
+}
+#square_yellow{
+    height:15px;
+    width:15px;
+    grid-area: square_yellow;
+    background-color: yellow;
+    justify-self: stretch;
+}
+#private_label{
+    grid-area:private_label;
+}
+#square_blue{
+    height:15px;
+    width:15px;
+    grid-area: square_blue;
+    background-color: blue;
+}
+#job_label{
+    grid-area:job_label;
+}
+#square_green{
+    height:15px;
+    width:15px;
+    grid-area: square_green;
+    background-color: green;
+}
+#flights_label{
+    grid-area:flights_label;
+}
+#inbox_mails{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7,auto);
+    grid-template-areas: 
+    "mail1"
+    "mail2"
+    "mail3"
+    "mail4"
+    "mail5"
+    "mail6"
+    "mail7";
+    overflow-y: auto;
+}
+.mail{
+    display:grid;
+    grid-template-columns: 20%, auto;
+    grid-template-rows: 20% auto auto;
+    border-bottom: 1px solid gray;
+    grid-template-areas: 
+    "img sender"
+    "img title"
+    ". mail_content";
+    padding: 5%;
+    margin-bottom:-2%;
+}
+#mail1{
+    grid-area: mail1;
+}
+#mail2{
+    grid-area: mail2;
+}
+#mail3{
+    grid-area: mail3;
+}
+#mail4{
+    grid-area: mail4;
+}
+#mail5{
+    grid-area: mail5;
+}
+#mail6{
+    grid-area: mail6;
+}
+#mail7{
+    grid-area: mail7;
+}
+.mail img{
+    grid-area: img;
+    justify-self: end;
+    width: 70px;
+    height: auto;
+    padding: 5%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+.mail h5{
+    grid-area: sender;
+    color: grey;
+    justify-self: start;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 1%;
+    height: auto;
+}
+.mail h4{
+    grid-area: title;
+    height: auto;
+    justify-self: start;
+    font-size: 26px;
+    margin-top:-1%;
+}
+.mail p{
+    grid-area: mail_content;
+    margin-top: -12%;
+    height: auto;
+    font-size: 20px;
+    justify-self: start;
+    margin-bottom: -5%;
 }
