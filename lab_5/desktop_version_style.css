@@ -2,7 +2,7 @@ main{
     height: 100vh;
     display: grid;
     grid-template-areas: "menu" "inbox" "open_mail";
-    grid-template-columns: 10% 25% auto;
+    grid-template-columns: 10% 25% 65%;
     grid-template-rows: 100%;
 }
 nav{
@@ -50,7 +50,7 @@ nav{
 #labels_article{
     grid-area: labels;
     margin-left: 13%;
-    grid-template-columns:5% auto;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(3,1fr);
     grid-template-areas: 
     "square_yellow private_label"
@@ -58,6 +58,7 @@ nav{
     "square_green flights_label";
 }
 #labels_article h4{
+    font-size: 20px;
     color: #3B5B82;
     text-transform: uppercase;
     text-decoration: none;
@@ -112,16 +113,18 @@ nav{
     overflow-y: auto;
 }
 .mail{
+    height: auto;
     display:grid;
+    justify-self: start;
     grid-template-columns: 20%, auto;
     grid-template-rows: 20% auto auto;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
     grid-template-areas: 
     "img sender"
     "img title"
     ". mail_content";
-    padding: 5%;
-    margin-bottom:-2%;
+    padding: 25px;
+    margin-bottom:-20px;
 }
 #mail1{
     grid-area: mail1;
@@ -167,13 +170,40 @@ nav{
     height: auto;
     justify-self: start;
     font-size: 26px;
-    margin-top:-1%;
+    margin-top:5px;
 }
 .mail p{
     grid-area: mail_content;
-    margin-top: -12%;
+    margin-top: -30px;
     height: auto;
     font-size: 20px;
     justify-self: start;
     margin-bottom: -5%;
+}
+#open_mail_section{
+    grid-area: open_mail;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% auto;
+    grid-template-areas: "header"
+    "open_content";
+    overflow-y: clip;
+}
+#open_mail_header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+    "open_header buttons"
+    "open_details buttons";
+}
+#open_mail_bar{
+    height:1px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+
+}
+#open_mail_content{
+    grid-area: open_content;
 }
