@@ -1,0 +1,46 @@
+body{
+    background-color: #5b6775;
+    height: 600px;
+    width: 600px;
+    padding: 25%;
+    position: relative;
+}
+.card{
+    background-color:#F5F7F7;
+    color: #53545A;
+}
+.name {
+    font-weight: bold;
+    font-size: 28px;
+    height: 25%;
+    text-align: center;
+    vertical-align: center;
+}
+.bar{
+    width: 90%;
+    border-bottom: 0.5px;
+    border-style: dashed;
+    border-color: grey;
+    text-align: center;
+}
+.list{
+    list-style-type: square;
+    padding-left: 20%;
+    height:49%;
+}
+.price{
+    background-color: #C0D5D2;
+    height: 25%;
+    text-align: center;
+}
+#switch_button{
+    height: 10%;
+    position: absolute;
+    padding: 2%;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    background-color: #AD7175;
+    border: 1px solid white;
+    border-radius: 40px;
+}
