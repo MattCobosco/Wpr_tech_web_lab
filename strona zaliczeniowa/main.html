@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karin Wiktor-Kałucka</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+      <main>
+          <header>
+              <li class="nav_link_desktop nav_link_active">
+                <a href="main.html">Start</a>
+              </li>
+              <li class="nav_link_desktop nav_link_unactive">
+                <a href="about.html">O mnie</a>
+              </li>
+              <li class="nav_link_desktop nav_link_unactive">
+                <a>Nagrania</a>
+              </li>
+              <li class="nav_link_desktop nav_link_unactive">
+                <a href="main.html#footer_social_div">Kontakt</a>
+              </li>
+          </header>
+          <section id="photos_section">
+            <img class="slide" src="/slides/1-1000x400.jpg">
+            <img class="slide" src="/slides/228-1000x400.jpg">
+            <img class="slide" src="/slides/429-1000x400.jpg">
+            <img class="slide" src="/slides/568-1000x400.jpg">
+
+            <script>
+              var slideIndex = 0;
+              carousel();
+        
+              function carousel() {
+              var i;
+              var x = document.getElementsByClassName("slide");
+              for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+             }
+              slideIndex++;
+              if (slideIndex > x.length) {slideIndex = 1}
+              x[slideIndex-1].style.display = "block";
+              setTimeout(carousel, 5000);
+        }
+            </script>
+          </section>
+          <section id="about_section">
+            <H4>O mnie</H4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt animi repellat voluptas esse voluptates facere, possimus odit ipsa earum dolorum commodi! Inventore distinctio soluta laboriosam accusamus eum voluptatibus nostrum itaque esse assumenda officiis enim similique quibusdam voluptas, placeat ex saepe!</p>
+          </section>
+
+          <footer>
+            <div id="footer_social_div">
+              <ul id="footer_social_list">
+                <li class="footer_social_icon">
+                  <a href="http://www.facebook.com/profile.php?id=100018349564821">
+                  <img src="/images/icons8-facebook-96.png">
+                </li>
+                <li class="footer_social_icon">
+                  <a href="https://www.linkedin.com/in/karin-kałucka-7a195a192/">
+                  <img src="/images/icons8-linkedin-96.png">
+                </li>
+                <li class="footer_social_icon">
+                  <a href="mailto:karinkalucka@gmail.com">
+                  <img src="/images/icons8-mail-96.png">
+                </li>
+              </ul>
+            </div>
+            <div id="footer_links_div">
+              <li class="footer_link_desktop">
+                <a href="main.html">Start</a>
+              </li>
+              <li class="footer_link_desktop">
+                <a href="about.html">O mnie</a>
+              </li>
+              <li class="footer_link_desktop">
+                <a href="recordings.html">Nagrania</a>
+              </li>
+            </div>
+            <div id="footer_credits_div">
+              <p>© 2021 Karin Wiktor-Kałucka</p>
+              <p>Designed by Mateusz Kałucki</p>
+            </div>
+          </footer>
+      </main>
+  </body>
