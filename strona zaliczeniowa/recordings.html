@@ -12,48 +12,19 @@
   <body>
       <main>
           <header>
-              <li class="nav_link nav_link_active">
+              <li class="nav_link nav_link_unactive">
                 <a href="main.html">Start</a>
               </li>
               <li class="nav_link nav_link_unactive">
                 <a href="about.html">O mnie</a>
               </li>
-              <li class="nav_link nav_link_unactive">
+              <li class="nav_link nav_link_active">
                 <a href="recordings.html">Nagrania</a>
               </li>
               <li class="nav_link nav_link_unactive">
-                <a href="main.html#footer_social_div">Kontakt</a>
+                <a href="#footer_social_div">Kontakt</a>
               </li>
           </header>
-          <section id="photos_section">
-            <img class="slide" src="images/slides/1-1000x400.jpg">
-            <img class="slide" src="images/slides/228-1000x400.jpg">
-            <img class="slide" src="images/slides/429-1000x400.jpg">
-            <img class="slide" src="images/slides/568-1000x400.jpg">
-
-            <script>
-              var slideIndex = 0;
-              carousel();
-        
-              function carousel() {
-              var i;
-              var x = document.getElementsByClassName("slide");
-              for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-             }
-              slideIndex++;
-              if (slideIndex > x.length) {slideIndex = 1}
-              x[slideIndex-1].style.display = "block";
-              setTimeout(carousel, 5000);
-        }
-            </script>
-          </section>
-          <section id="about_section">
-            <h3>O mnie</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente quidem dolorem est cumque fuga tenetur iure voluptatem repellendus maiores esse nulla iusto, culpa natus. Itaque esse officiis provident earum! Aspernatur, placeat impedit. Qui aperiam commodi minus! Ea molestiae tempore, quaerat dolorum harum eos aliquam optio iure, ducimus inventore provident?<p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente quidem dolorem est cumque fuga tenetur iure voluptatem repellendus maiores esse nulla iusto, culpa natus. Itaque esse officiis provident earum! Aspernatur, placeat impedit. Qui aperiam commodi minus! Ea molestiae tempore, quaerat dolorum harum eos aliquam optio iure, ducimus inventore provident?<p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente quidem dolorem est cumque fuga tenetur iure voluptatem repellendus maiores esse nulla iusto, culpa natus. Itaque esse officiis provident earum! Aspernatur, placeat impedit. Qui aperiam commodi minus! Ea molestiae tempore, quaerat dolorum harum eos aliquam optio iure, ducimus inventore provident?<p>
-          </section>
           <footer>
             <div id="footer_social_div">
               <h5>Kontakt</h5>
