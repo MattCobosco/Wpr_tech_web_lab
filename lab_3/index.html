@@ -43,52 +43,20 @@
                 text-align: center;
                 margin-bottom: 5%;
             }
-            #photos {
+            .photos {
                 text-align: center;
                 align-content: center;
                 justify-content: center;
-                width: 50%;
-                height: auto;
-                margin: auto;
                 border: 20px;
                 background-color: white;
-                
-            }
-            #photos_row1 {
-                display: flexbox;
-                padding-top: 2%;
-                padding-right: 2%;
-                padding-left: 2%;
-                padding-bottom: 1%;
-                width: 100%;
-                height: 25%;
-            }
-            #photos_row2 {
-                display: flexbox;
-                padding-top: 1%;
-                padding-right: 2%;
-                padding-left: 2%;
-                padding-bottom: 1%;
-                width: 100%;
-                height: 25%;
-            }
-            #photos_row3 {
-                display: flexbox;
-                padding-top: 1%;
-                padding-right: 2%;
-                padding-left: 2%;
-                padding-bottom: 1%;
-                width: 100%;
-                height: 25%;
-            }
-            #photos_row4 {
-                display: flexbox;
-                padding-top: 1%;
-                padding-right: 2%;
-                padding-left: 2%;
-                padding-bottom: 2%;
-                width: 100%;
-                height: 25%;
+                display:flex grid;
+                grid-template-columns: repeat(4,25%);
+                grid-template-areas: repeat(4,25%);
+                grid-template-areas:
+                "photo1 photo2 photo3 photo4"
+                "photo5 photo6 photo7 photo8"
+                "photo9 photo10 photo11 photo12"
+                "photo13 photo14 photo15 photo16";
             }
             #title {
                 text-align: center;
@@ -125,6 +93,54 @@
                 color:grey;
                 font-size: 12px;
             }
+            #photo1{
+                grid-area: photo1;
+            }
+            #photo2{
+                grid-area: photo2;
+            }
+            #photo3{
+                grid-area: photo3;
+            }
+            #photo4{
+                grid-area: photo4;
+            }
+            #photo5{
+                grid-area: photo5;
+            }
+            #photo6{
+                grid-area: photo6;
+            }
+            #photo7{
+                grid-area: photo7;
+            }
+            #photo8{
+                grid-area: photo8;
+            }
+            #photo9{
+                grid-area: photo9;
+            }
+            #photo10{
+                grid-area: photo10;
+            }
+            #photo11{
+                grid-area: photo11;
+            }
+            #photo12{
+                grid-area: photo12;
+            }
+            #photo13{
+                grid-area: photo13;
+            }
+            #photo14{
+                grid-area: photo14;
+            }
+            #photo15{
+                grid-area: photo15;
+            }
+            #photo16{
+                grid-area: photo16;
+            }
         </style> 
     </head>
     <body>
@@ -136,30 +152,22 @@
                 <p>DESIGN & DEVELOPMENT</p>
             </div>
             <div id="photos">
-                <div id="photos_row1">
-                    <img src="images/zdjecia/16.jpg" alt="picture1">
-                    <img src="images/zdjecia/15.jpg" alt="picture2">
-                    <img src="images/zdjecia/14.jpg" alt="picture3">
-                    <img src="images/zdjecia/13.jpg" alt="picture4">
-                </div>
-                <div id="photos_row2">
-                    <img src="images/zdjecia/12.jpg" alt="picture5">
-                    <img src="images/zdjecia/11.jpg" alt="picture6">
-                    <img src="images/zdjecia/10.jpg" alt="picture7">
-                    <img src="images/zdjecia/9.jpg" alt="picture8">
-                </div>
-                <div id="photos_row3">
-                    <img src="images/zdjecia/8.jpg" alt="picture9">
-                    <img src="images/zdjecia/7.jpg" alt="picture10">
-                    <img src="images/zdjecia/6.jpg" alt="picture11">
-                    <img src="images/zdjecia/5.jpg" alt="picture12">
-                </div>
-                <div id="photos_row4">
-                    <img src="images/zdjecia/4.jpg" alt="picture13">
-                    <img src="images/zdjecia/3.jpg" alt="picture14">
-                    <img src="images/zdjecia/2.jpg" alt="picture15">
-                    <img src="images/zdjecia/1.jpg" alt="picture16">
-                </div>
+                    <img class="photo" id="photo1" src="images/zdjecia/16.jpg" alt="picture1">
+                    <img class="photo" id="photo2" src="images/zdjecia/15.jpg" alt="picture2">
+                    <img class="photo" id="photo3" src="images/zdjecia/14.jpg" alt="picture3">
+                    <img class="photo" id="photo4" src="images/zdjecua/13.jpg" alt="picture4">
+                    <img class="photo" id="photo5" src="images/zdjecia/12.jpg" alt="picture5">
+                    <img class="photo" id="photo6" src="images/zdjecia/11.jpg" alt="picture6">
+                    <img class="photo" id="photo7" src="images/zdjecia/10.jpg" alt="picture7">
+                    <img class="photo" id="photo8" src="images/zdjecia/9.jpg" alt="picture8">
+                    <img class="photo" id="photo9" src="images/zdjecia/8.jpg" alt="picture9">
+                    <img class="photo" id="photo10" src="images/zdjecia/7.jpg" alt="picture10">
+                    <img class="photo" id="photo11" src="images/zdjecia/6.jpg" alt="picture11">
+                    <img class="photo" id="photo12" src="images/zdjecia/5.jpg" alt="picture12">
+                    <img class="photo" id="photo13" src="images/zdjecia/4.jpg" alt="picture13">
+                    <img class="photo" id="photo14" src="images/zdjecia/3.jpg" alt="picture14">
+                    <img class="photo" id="photo15" src="images/zdjecia/2.jpg" alt="picture15">
+                    <img class="photo" id="photo16" src="images/zdjecia/1.jpg" alt="picture16">
             </div>
             <div id="title">
                 <p><b>About Layer</b> 51<p>

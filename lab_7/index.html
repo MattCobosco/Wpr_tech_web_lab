@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> </meta>
+  <script>
+    var menuHidden = false;
+    function showMenu() {
+        if (menuHidden==false) {
+            document.getElementById("paigeContainer").setAttribute("id","pageContainerLayDown");
+            menuHidden=true;
+        }
+    }
+  </script>
+</head>
+
+<body>
+<div id="mainContainer">
+    <div id="pageContainer">
+      <button id="mainButton" onclick="showMenu()">Click Me!</button>
+    </div>
+    <div id="menuContainer">
+        <button id="homeButton">Home</button>
+        <button id="newsButton">News</button>
+        <button id="imagesButton">Images</button>
+        <button id="uploadsButton">Uploads</button>
+        <button id="favoritesButton">Favorites</button>
+        <button id="messagesButton">Messages</button>
+        <button id="securityButton">Security</button>
+    </div>
+</div>
+</body>
+</html>

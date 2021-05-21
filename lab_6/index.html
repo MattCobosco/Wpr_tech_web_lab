@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> </meta>
+  <script>
+    var sushiTop = true;
+    function switchCards() {
+        if (sushiTop===true) {
+            document.getElementById("happy_sushi").setAttribute("class","shrinkRight");
+            document.getElementById("sushi_lovers").setAttribute("class","growLeft");
+            sushiTop=false;
+        }
+        else
+        {
+            document.getElementById("happy_sushi").setAttribute("class","growRight");
+            document.getElementById("sushi_lovers").setAttribute("class","shrinkLeft");
+            sushiTop=true;
+        }
+    }
+  </script>
+</head>
+
+<body>
+    <div id="cardsContainer">
+        <div class="cardEven" id="happy_sushi">
+            <div class="name">
+                <h3>Happy Sushi Lunch</h3>
+            </div>
+            <div class="bar"></div>
+                <ul class="list">
+                    <li>California roll</li>
+                    <li>2 Pieces Salmon Nigiri</li>
+                    <li>Sea Salt Edamame</li>
+                    <li>Miso Soup</li>
+                </ul>
+                <div class="price">
+                    <p>$12</p>
+                </div>
+            </div>
+            <div class="cardEven" id="sushi_lovers">
+                <div class="name">
+                    <h3>Sushi Lover's Lunch</h3>
+                </div>
+                <div class="bar"></div>
+                <ul class="list">
+                    <li>Spicy Tuna Roll</li>
+                    <li>Shrimp Tempura Roll</li>
+                    <li>4 Pieces Assorted Nigiri</li>
+                    <li>Won Ton Soup</li>
+                </ul>
+                <div class="price">
+                    <p>$18</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="buttonContainer">
+        <button id="switchButton" onclick="switchCards()">Switch to Happy Sushi Lunch!</button>
+    </div> 
+</body>
+</html>
