@@ -10,11 +10,11 @@ header{
     flex-direction: row;
     margin-top:1%;
     margin-bottom: 1%;
-    height:70px;
+    height:60px;
 }
 header li {
-    height: 70px; 
-    line-height: 70px;
+    height: 60px; 
+    line-height: 60px;
 }
 header img{
     position: absolute;
