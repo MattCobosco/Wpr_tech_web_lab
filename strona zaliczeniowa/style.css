@@ -28,7 +28,7 @@ header img{
     margin-right: 3%;
     border: 0px;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 13px;
 }
 .nav_link_active a{
     color: #D02E42;
@@ -155,7 +155,7 @@ footer{
 }
 .footer_credits a{
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 8px;
     color: white;
     margin: 0.5%;
     text-decoration: none;
@@ -163,7 +163,7 @@ footer{
 }
 .footer_credits p{
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 8px;
     color: white;
     margin: 0.5%;
     text-decoration: none;
