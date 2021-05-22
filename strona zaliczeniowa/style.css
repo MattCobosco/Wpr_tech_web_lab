@@ -82,8 +82,27 @@ header img{
 }
 
 
-#recordings_section{
-    margin-left: 2%;
+#recordings_section {
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+#recordings_section h3{
+    text-transform: uppercase;
+    margin-left:2.5%;
+    border-bottom: 1px solid #231f20;
+    margin-top: -1%;
+}
+#recordings_section p{
+    margin-left:4%;
+}
+#recordings_section img{
+    margin-right: 1%; 
+    float:left;
+}
+#recordings_playlists_div{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
 }
 
 
