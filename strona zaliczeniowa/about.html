@@ -47,15 +47,21 @@
                   <a href="https://www.linkedin.com/in/karin-kałucka-7a195a192/">
                   <img src="/images/icons/icons8-linkedin-96.png"></a>
                 </li>
-                <li class="footer_social_icon hover_grow" onclick="showContactForm()">
-                  <img src="/images/icons/icons8-mail-96.png">
+                <li class="footer_social_icon hover_grow" id="contact_button">
+                  <img src="/images/icons/icons8-mail-96.png" onClick="toggleContactForm()">
                 </li>
               </ul>
             </div>
             <div id="contact_form_open">
               <script>
-                function showContactForm() {
-                  document.getElementById('contact_form_open').style.display = "block";
+                function toggleContactForm() {
+                  var x = document.getElementById("contact_form_open");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } 
+                  else {
+                    x.style.display = "block";
+                  }
                 }
               </script>
               <form action="/my-handling-form-page" method="post">
