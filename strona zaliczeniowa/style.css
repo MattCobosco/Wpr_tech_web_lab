@@ -62,11 +62,23 @@ header img{
     text-transform: uppercase;
     margin-left:2.5%;
     border-bottom: 1px solid #231f20;
+    margin-top: -1%;
 }
 #about_section img{
     margin-right: 1%; 
     float:left;
     height:150px;
+}
+
+#about_section_small {
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+#about_section_small h3{
+    text-transform: uppercase;
+    margin-left:2.5%;
+    border-bottom: 1px solid #231f20;
+    margin-top: 2%;
 }
 
 
@@ -167,8 +179,7 @@ footer{
     margin: 0 auto;
     width: 25%;
     padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
+    border: 1px solid #D02E42;
 }
 #contact_form_open ul{
     list-style: none;
