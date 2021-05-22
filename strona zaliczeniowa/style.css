@@ -65,7 +65,8 @@ header img{
 }
 #about_section img{
     margin-right: 1%; 
-    float:left
+    float:left;
+    height:150px;
 }
 
 
