@@ -1,0 +1,45 @@
+
+.body_index{
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 1.2fr 0.5fr;
+   grid-template-areas: "top"
+   "bottom";
+}
+.page_top{
+    grid-area: top;
+    background-image: url("./img/masthead@2x.jpg");
+}
+.logo img{
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    background-color:grey;
+    transition: all 0.2s;
+    color:white;
+}
+
+.page_bottom{
+    grid-area: bottom;
+}
+.main_container{
+}
+
+footer{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "footer_left_area" "footer_right_area";
+}
+
+.footer_left{
+    grid-area: "footer_left_area";
+    justify-items: left;
+}
+
+.footer_right{
+    grid-area: "footer_right_area";
+    justify-items: right;
+}
