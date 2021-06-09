@@ -1,81 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebMail_Mobile</title>
-    <link rel="stylesheet" href="mobile_version_style.css" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WebMail</title>
+    <link rel="stylesheet" href="mobile_version_style.css"/>
+    <link rel="stylesheet" media="(min-width: 960px)" href="min-width-960px.css">
+    <script src="scripts.js"></script>
   </head>
   <body>
-    <div id = "top_bar">
-      <div id="menu"><link>Menu</link></div>
+    <div id="top_bar">
+      <div id="menu_button"><button onClick="showDropdown()">Menu</button></div>
+      
+      <div id="menu_dropdown">
+        <div id="menu_dropdown_compose_button">
+          <button id="compose_button">Compose</button>
+        </div> 
+        <div id="mail_folders_section">
+          <p class="hover">Inbox</p>
+          <p class="hover">Important</p>
+          <p class="hover">Sent</p>
+          <p class="hover">Drafts</p>
+          <p class="hover">Thrash</p>
+        </div>
+        <div id="mail_labels_section">
+          <h3>Labels</h3>
+          <div class="mail_label_container">
+            <div class="label_square" id="private_label_square"></div>
+            <div class="label_text"><p>Private</h4></div>
+          </div>
+          <div class="mail_label_container">
+            <div class="label_square" id="job_label_square"></div>
+            <div class="label_text"><p>Job</h4></div>
+          </div>
+          <div class="mail_label_container">
+            <div class="label_square" id="flights_label_square"></div>
+            <div class="label_text"><p>Flights</h4></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div id = "inbox">
+      <div class="mail_container">
+        <div class="mail_read"></div>
         <div class="mail">
           <div class="avatar">
-            <img src="/lab_4/webmail/avatary/p5.png" alt="mail1_avatar"></div>
-            <div class="mail_txt">
-              <div class="mail_sender"><h5>May June</h5></div>
-              <div class="mail_topic"><h4>New York New Yoork</h4></div>
-              <div class="mail_content"><p>Hey, confirm your meeting today, Fifth Avenue. Hmm?</p></div>
-            </div>
-          <div class="mail">
-            <div class="avatar">
-              <img src="/lab_4/webmail/avatary/p4.png" alt="mail2_avatar"></div>
-            <div class="mail_txt">
-              <div class="mail_sender"><h5>Johnny Cash</h5></div>
-              <div class="mail_topic"><h4>Re: Pull requests</h4></div>
-              <div class="mail_content"><p>Really, better give that money back. Papa Joe is waiting.</p></div>
-        </div>
-        <div class="mail">
-          <div class="avatar">
-            <img src="/lab_4/webmail/avatary/p3.png" alt="mail3_avatar"></div>
+            <img src="/lab_4/webmail/avatary/p5.png" alt="mail1_avatar">
+          </div>
           <div class="mail_txt">
-              <div class="mail_sender"><h5>Your Wordpress</h5></div>
-              <div class="mail_topic"><h4>Last warning</h4></div>
-              <div class="mail_content"><p>Your previous drupal site had 12 errors, 15 warnings. It sucks!</p></div>
+            <div class="mail_sender"><h5>May June</h5></div>
+            <div class="mail_topic"><h4>New York New Yoork</h4></div>
+            <div class="mail_content"><p>Hey, confirm your meeting today, Fifth Avenue. Hmm?</p></div>
+          </div>
         </div>
+      </div>
+      <div class="mail_container">
+        <div class="mail_unread"></div>
         <div class="mail">
           <div class="avatar">
-            <img src="/lab_4/webmail/avatary/p2.png" alt="mail4_avatar"></div>
+            <img src="/lab_4/webmail/avatary/p4.png" alt="mail2_avatar">
+          </div>
+          <div class="mail_txt">
+            <div class="mail_sender"><h5>Johnny Cash</h5></div>
+            <div class="mail_topic"><h4>Re: Pull requests</h4></div>
+            <div class="mail_content"><p>Really, better give that money back. Papa Joe is waiting.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="mail_container">
+        <div class="mail_unread"></div>
+        <div class="mail">
+          <div class="avatar">
+            <img src="/lab_4/webmail/avatary/p3.png" alt="mail3_avatar">
+          </div>
+          <div class="mail_txt">
+            <div class="mail_sender"><h5>Your Wordpress</h5></div>
+            <div class="mail_topic"><h4>Last warning</h4></div>
+            <div class="mail_content"><p>Your previous drupal site had 12 errors, 15 warnings. It sucks!</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="mail_container">
+        <div class="mail_read"></div>
+        <div class="mail">
+          <div class="avatar">
+            <img src="/lab_4/webmail/avatary/p2.png" alt="mail4_avatar">
+          </div>
           <div class="mail_sender"><h5>June Ray</h5></div>
           <div class="mail_topic"><h4>Re: That night</h4></div>
           <div class="mail_content"><p>Excepteur sin occaecat cupidatat non proident, sunt in culpa.</p></div>
         </div>
+      </div>
+      <div class="mail_container">
+        <div class="mail_read"></div>
         <div class="mail">
           <div class="avatar">
-            <img src="/lab_4/webmail/avatary/p1.png" alt="mail5_avatar"></div>
-          <div class="mail_txt">
-              <div class="mail_sender"><h5>Andrew Clearwater</h5></div>
-              <div class="mail_topic"><h4>What about materials?</h4></div>
-              <div class="mail_content"><p>Ut enim ad minim veniam, quis nostrud exercitation ullamo laboris nisi ut aliquip</p></div>
+            <img src="/lab_4/webmail/avatary/p1.png" alt="mail5_avatar">
           </div>
+          <div class="mail_txt">
+            <div class="mail_sender"><h5>Andrew Clearwater</h5></div>
+            <div class="mail_topic"><h4>What about materials?</h4></div>
+            <div class="mail_content"><p>Ut enim ad minim veniam, quis nostrud exercitation ullamo laboris nisi ut aliquip</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="mail_container">
+        <div class="mail_read"></div>
         <div class="mail">
           <div class="avatar">
-            <img src="/lab_4/webmail/avatary/p6.png" alt="mail6_avatar"></div>
-          <div class="mail_txt">
-              <div class="mail_sender"><h5>Chris Duck</h5></div>
-              <div class="mail_topic"><h4>Donec sagittis dolor ut quam pharetra pretium varius in nibh</h4></div>
-              <div class="mail_content"><p>Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris.</p></div>
+            <img src="/lab_4/webmail/avatary/p6.png" alt="mail6_avatar">
           </div>
+          <div class="mail_txt">
+            <div class="mail_sender"><h5>Chris Duck</h5></div>
+            <div class="mail_topic"><h4>Donec sagittis dolor ut quam pharetra pretium varius in nibh</h4></div>
+            <div class="mail_content"><p>Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="mail_container">
+        <div class="mail_read"></div>
         <div class="mail">
           <div class="avatar">
-            <img src="/lab_4/webmail/avatary/p6.png" alt="mail7_avatar"></div></div>
-          <div class="mail_txt">
-              <div class="mail_sender"><h5>Helen Dominic</h5></div>
-              <div class="mail_topic"><h4>You're crazy, really!</h4></div>
-              <div class="mail_content"><p>Check this one before you'll jump!</p>
-              </div>
+            <img src="/lab_4/webmail/avatary/p6.png" alt="mail7_avatar">
           </div>
+          <div class="mail_txt">
+            <div class="mail_sender"><h5>Helen Dominic</h5></div>
+            <div class="mail_topic"><h4>You're crazy, really!</h4></div>
+            <div class="mail_content"><p>Check this one before you'll jump!</p></div>
+          </div>
+        </div>  
+      </div>
     </div>
     <div id ="open_mail">
       <div id="open_mail_topbar">
         <div id="open_mail_topbar_text">
-          <h2>Aliquam ac feugiat dolor</h2>
+          <h1>Aliquam ac feugiat dolor</h1>
           <p>From Eno Uqa at 13:16pm, May 8, 2015<p>
         </div>
-        <div id="open_mail__topbar_buttons">
+        <div id="open_mail_topbar_buttons">
           <div class="open_mail_topbar_button">
             <button>Reply</button>
           </div>
@@ -86,7 +149,6 @@
             <button>Move to</button>
           </div>
         </div>
-      </div>
       </div>
       <div id="open_mail_content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
