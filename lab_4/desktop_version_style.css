@@ -1,35 +1,24 @@
-body {
-    width: 100%;
-    margin:auto;
-    justify-content: center;
+body{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    background-color: #252A3A;
 }
 #top_bar{
-    height: 30px;
-    width: 100%;
-    background-color: #252A3A;
-    color: #217EEA;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 30px;
+    width:10%;
 }
 #menu_button{
-    text-align: right;
-}
-#menu_button button{
-    background-color:transparent;
-    border:none;
-    color:#2080E1;
+    display:none;
 }
 #menu_dropdown{
-    z-index:1;
-    position:relative;
-    background-color: #252A3A;
-    display: none;
-    text-align: left;
+    display:flex;
+    flex-direction:column;
 }
 #menu_dropdown_compose_button{
     text-align: center;
     padding: 10px;
+    margin-top: 20%;
+    margin-bottom:5%;
 }
 #mail_folders_section{
     margin-left:10px;
@@ -71,7 +60,7 @@ body {
     flex-direction:row;
     line-height:15px;
     margin: 10px;
-    padding-left: 15px;;
+    padding-left: 15px;
 }
 .label_square{
     height:15px;
@@ -88,10 +77,11 @@ body {
     background-color:#40C365;
 }
 #inbox{
-    height:auto;
-    width:100%;
+    height: 100%;
+    width:20%;
     display:flex;
     flex-direction: column;
+    background-color: white;
 }
 .mail_read{
     width:5px;
@@ -106,6 +96,9 @@ body {
     flex-direction: row;
     background-color: white;
     border-bottom: 1px solid rgba(128, 128, 128, 0.151);
+}
+.mail_container:hover{
+    background-color: rgba(128, 128, 128, 0.10);
 }
 .mail{
     padding:5px;
@@ -140,44 +133,57 @@ body {
     text-align:left;
 }
 .mail img{
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     padding: 5px;
     float: left;
-    border-radius: 15px;
+    border-radius: 10px;
+}
+#open_mail{
+    background-color:white;
+    border-left: 2px rgba(128, 128, 128, 0.151) solid;
+    width:auto;
+    height:100%;
+    width:70%;
 }
 #open_mail_topbar{
+    height: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2%;
+    padding:1,5%;
     margin-bottom: 5px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.151);
 }
 #open_mail_topbar_text{
-    width:65%;
     text-align:left;
 }
 #open_mail_topbar_text h1{
     margin: 0px;
 }
+#open_mail_topbar_text p{
+    margin: 2px;
+}
 #open_mail_topbar_buttons{
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:flex-end;
-    align-content:flex-start;
-    width: 35%;
+    justify-content:space-around;
+    align-content: center;
+    width: 28%;
     text-align:right;
 }
+.open_mail_topbar_button button:hover{
+    background-color:rgba(128, 128, 128, 0.2);
+}
 .open_mail_topbar_button button{
-    font-size: 12px;
+    padding: 3px 20px;
+    font-size: 16px;
     color: gray;
     background-color: transparent;
-    border: 1px solid rgba(128, 128, 128, 0.151);
+    border: 1px solid gray;
     border-radius: 15px;
     text-align: center;
 }
 #open_mail_content{
-    padding:5px;
+    padding:20px;
 }
