@@ -3,55 +3,216 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 1.2fr 0.5fr;
     grid-template-areas: "top" "bottom";
+    width: 100%;
+    margin: 0;
+    background: #f3f4f5;
 }
 
 .page_top {
     grid-area: top;
     background-image: url("./img/masthead@2x.jpg");
+    background-size: cover;
+    vertical-align: middle;
+    height: 1050px;
+    width: 100%;
 }
 
 header {
     display: grid;
-    grid-template-areas: "logo_area nav_area"
+    grid-template-areas: "logo_area nav_area";
+    height: 52px;
+    width: 1140px;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    border-bottom: 1px #cad2d7 solid;
 }
 
 .logo img {
     grid-area: logo_area;
+    justify-self: start;
+    height: 52px;
+    width: 131px;
 }
 
 nav {
     grid-area: nav_area;
+    justify-self: end;
+}
+
+.nav_ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav_ul li {
+    padding: .4em .4em;
+    font-weight: bold;
 }
 
 nav a {
+    font-size: 20px;
     text-decoration: none;
     color: black;
+    padding: 0.3em 1.2em;
+    font-size: 20px;
+    border-radius: 3px;
 }
 
-nav a:hover {
+.nav_active {
+    background-color: #ffc000;
+    color: #fff;
+}
+
+.nav_unactive a:hover {
     background-color: grey;
     transition: all 0.2s;
     color: white;
+}
+
+.quote_index_wrapper {
+    height: 578.188px;
+    width: 1140px;
+    margin: auto;
+}
+
+.quote_index {
+    width: 65%;
+    margin-right: 5%;
+    margin-top: 18%;
+    padding-bottom: 30px;
+    float: left;
+}
+
+.quote_index h1 {
+    font-size: 96px;
+    margin-bottom: 15px;
+    letter-spacing: -2px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 100%;
+    word-wrap: break-word;
+}
+
+.quote_index h3 {
+    letter-spacing: 0;
+    color: #e2e2e2;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 100%;
+    margin: 25px 0 .5em;
+    word-wrap: break-word;
+}
+
+.quote_index h5 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -1px;
+    margin: 25px 0 .5em;
+    word-wrap: break-word;
+}
+
+.quote_index p {
+    color: #fff;
+    margin: 1em 0;
+    word-wrap: break-word;
+    font-size: 18px;
+}
+
+.quote_index a {
+    transition: all 250ms ease-in-out;
+    color: #3c4a52;
+    text-decoration: none;
+}
+
+.quote_index a:hover {
+    color: #ffc000;
 }
 
 .page_bottom {
     grid-area: bottom;
 }
 
-.main_container {}
+.main_container {
+    padding: 50px 0;
+}
+
+.sections_wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 16%;
+}
+
+.section {
+    width: 300px;
+    height: 342px;
+    padding: 0px 50px;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-top: 15px;
+    color: #2d3438;
+}
+
+.section p {
+    margin: 1em 0;
+    word-wrap: break-word;
+}
+
+.section a {
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2d3438;
+    font-weight: bold;
+}
+
+.section a:hover {
+    color: #ffc000;
+}
 
 footer {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "footer_left_area" "footer_right_area";
+    display: grid;
+    grid-template-areas: "footer_left_area footer_right_area";
+    font-size: 14px;
+    color: #9fa6aa;
+    border-top: 1px solid #cad2d7;
+    padding: 50px 0 50px;
+    margin-top: 20px;
+    width: 1140px;
+    margin: 0 auto;
 }
 
 .footer_left {
-    grid-area: "footer_left_area";
-    justify-items: left;
+    grid-area: footer_left_area;
+    justify-self: start;
 }
 
 .footer_right {
-    grid-area: "footer_right_area";
-    justify-items: right;
+    grid-area: footer_right_area;
+    justify-self: end;
+}
+
+.logo-foot img {
+    height: 19px;
+    width: 45px;
+    vertical-align: middle;
+    border: none;
+    transition: all 250ms ease-in-out;
+    position: relative;
+}
+
+.social-link img {
+    width: 31px;
+    transition: all 250ms ease-in-out;
+    opacity: 1;
+    position: relative;
+}
+
+.social-link img:hover {
+    opacity: 0.6;
 }
