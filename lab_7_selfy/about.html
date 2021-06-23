@@ -1,55 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Selfy</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body class="body_about">
-        <header class="header">
-            <a href="index.html" class="logo"><img src="img/logo@2x.png" alt="logo" /></a>
-            <nav>
-                <ul class="nav_ul">
-                    <li><a class="nav_active" href="index.html">Home</a></li>
-                    <li><a class="nav_unactive" href="about.html">About</a></li>
-                    <li><a class="nav_unactive" href="styles.html">Styles</a></li>
-                    <li><a class="nav_unactive" href="gallery.html">Gallery</a></li>
-                    <li><a class="nav_unactive" href="blog.html">Blog</a></li>
-                    <li><a class="nav_unactive" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="about_page_content">
-            <img src="./img/mock-small.jpg" alt="some Asian guy">
-            <h1>About Me</h1>
-            <h2>Praesent commodo cursus magna, venenatis vestibulum. Donec id elit non mi porta gravida at eget vel scelerisl consectetur etsie.</h2>
-            <div class="about_me_left">
-                <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur rutrum fauci adipiscing elit.</p>
+<body class="body">
+    <header>
+        <a href="/" class="logo_container">
+            <img class="logo" src="images/logo@2x.png" alt="">
+        </a>
+        <nav>
+            <div class="nav_item"><a href="">Home</a></div>
+            <div class="nav_item active"><a href="/about.html">About</a></div>
+            <div class="nav_item"><a href="">Styles</a></div>
+            <div class="nav_item"><a href="/gallery.html">Gallery</a></div>
+            <div class="nav_item"><a href="/blog.html">Blog</a></div>
+            <div class="nav_item"><a href="/contact.html">Contact</a></div>
+        </nav>
+    </header>
+    <div class="main_container">
+        <div class="main">
+            <div class="mock_small">
+                <img src="images/mock-small.jpg" alt="">
             </div>
-            <div class="about_me_right">
-                <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum.</p>
+            <div class="page_title">
+                <h1 class="title">About Me</h1>
+                <p class="title_p">Praesent commodo cursus magna, venenatis vestibulum. Donec id elit non mi porta
+                    gravida at eget vel scelerisl consectetur&nbsp;etsie.</p>
+            </div>
+            <div class="paragraphs">
+                <div class="half">
+                    <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor
+                        fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue
+                        laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                        venenatis&nbsp;vestibulum.</p>
+                    <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor
+                        fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue
+                        laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                        venenatis vestibulum.Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies
+                        vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur rutrum fauci adipiscing&nbsp;elit.
+                    </p>
+                </div>
+
+                <div class="half last">
+                    <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor
+                        fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue
+                        laoreet rutrum faucibus dolor&nbsp;auctor.</p>
+                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non
+                        mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id
+                        elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum
+                        faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                        vestibulum. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus
+                        mollis&nbsp;interdum.</p>
+                </div>
             </div>
         </div>
-
-        <footer>
-            <div class="footer_left">
-                <a href="index.html" class="logo-foot"><img src="img/logo-foot@2x.png" alt="logo" /></a>
-                © Copyright Selfy 2013
-            </div>
-            <div class="footer_right">
-                <a href="#" class="social-link"><img src="img/icon-facebook@2x.png" alt="Facebook" /></a>
-                <a href="#" class="social-link"><img src="img/icon-twitter@2x.png" alt="Facebook" /></a>
-                <a href="#" class="social-link"><img src="img/icon-linkedin@2x.png" alt="Facebook" /></a>
-            </div>
-        </footer>
     </div>
+    <footer>
+        <div class="footer_container">
+            <div class="footer footer_right">
+                <a href="#" class="footer_hover social_icon"><img src="images/icon-facebook@2x.png" alt="Facebook"></a>
+                <a href="#" class="footer_hover social_icon"><img src="images/icon-twitter@2x.png" alt="Twitter"></a>
+                <a href="#" class="footer_hover social_icon"><img src="images/icon-linkedin@2x.png" alt="LinkedIn"></a>
+            </div>
+            <div class="footer footer_left">
+                <a href="index.html" class="footer_hover logo_foot"><img src="images/logo-foot@2x.png" alt="logo"></a>
+                &copy;Copyright Selfy 2013
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
