@@ -9,19 +9,35 @@ a {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 66px;
+    margin-top: 25px;
+    margin-bottom: 33px;
+
 }
 
 h2 {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 56px;
+    margin-top: 15px;
+    margin-bottom: 18px;
 }
 
 .body_index {
     display: grid;
     grid-template-areas: "back" "content" "footer";
-    grid-template-rows: 100vh auto auto;
+    grid-template-rows: 1050px min-content min-content;
     background-color: #f3f4f5;
+}
+
+#background_img {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    height: 170%;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -999999;
+    overflow: hidden;
 }
 
 .body {
@@ -33,29 +49,26 @@ h2 {
 
 .back {
     display: grid;
-    grid-template-areas: "left header right" "left empty right" "left quotes right";
-    grid-template-columns: 1fr minmax(auto, 1140px) 1fr;
-    grid-template-rows: min-content 1fr 3fr;
-    background-image: url(images/masthead@2x.jpg);
+    grid-template-areas: "left header right" "left quotes right";
+    grid-template-columns: 1fr 1140px 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-area: back;
     position: absolute;
-    min-height: 100vh;
     min-width: 100%;
-    background-size: cover;
-    background-position: top 20px;
 }
 
 header {
+    overflow-x: hidden;
     grid-area: header;
     display: flex;
     width: auto;
     height: min-content;
-    width: 100%;
-    max-width: 1140px;
+    width: 1140px;
     justify-content: space-between;
     padding-top: 60px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
     margin: 0 auto;
+    margin-bottom: 12px;
     border-bottom: 1px solid #cad2d7;
     align-items: center;
 }
@@ -105,7 +118,9 @@ nav {
 
 .quotes {
     grid-area: quotes;
-    width: 75%;
+    width: 80%;
+    margin-top: 15%;
+    height: min-content;
     color: #fff;
 }
 
@@ -137,6 +152,7 @@ nav {
 .main_container {
     grid-area: content;
     background-color: #f3f4f5;
+    padding-bottom: 50px;
 }
 
 .paragraphs_main {
@@ -148,7 +164,7 @@ nav {
 
 .main {
     max-width: 1140px;
-    margin: 40px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-areas: "aside_left top aside_right" "aside_left title aside_right" "aside_left content aside_right" "aside_left bottom aside_right";
     padding-bottom: 60px;
@@ -193,7 +209,6 @@ nav {
 .title {
     color: #2d3438;
     position: relative;
-    font-size: 36px;
     letter-spacing: -1px;
 }
 
@@ -228,8 +243,11 @@ nav {
 }
 
 .half p {
-    font-size: 18px;
-    color: #363844;
+    font-size: 16px;
+    color: #656A6F;
+    line-height: 1.5;
+    width: 85%;
+    word-wrap: break-word;
 }
 
 .paragraph_main {
@@ -237,9 +255,11 @@ nav {
 }
 
 .paragraph_main p {
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(97, 97, 97);
     text-shadow: rgb(75, 74, 74);
+    line-height: 1.4;
+    word-wrap: break-word;
 }
 
 .more {
@@ -286,8 +306,7 @@ footer {
 }
 
 .footer_container {
-    width: 100%;
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
     padding-bottom: 60px;
     width: 1140px;
@@ -328,6 +347,17 @@ footer {
 
 .page_title_contact {
     grid-area: title;
+}
+
+.title_p{
+    font-size: 22px;
+    line-height: 32px;
+    width: 74%;
+    margin-top:0px;
+    margin-right: 4%;
+    float: left;
+    color: #3c4a52;
+    font-style: oblique;
 }
 
 .page_title_contact h2 {
@@ -928,9 +958,9 @@ blockquote {
 }
 
 .video_wrapper {
-    padding-top:10px;
-    
+    padding-top: 10px;
 }
+
 .video_wrapper iframe {
     display: block;
     width: 720px;
@@ -938,12 +968,16 @@ blockquote {
     margin: 0 auto;
 }
 
+.fontsize16px {
+    font-size: 16px;
+}
+
 .fontsize24px {
     font-size: 24px;
 }
 
-.fontsize16px {
-    font-size: 16px;
+.fontsize36px {
+    font-size: 36px;
 }
 
 .italic {
