@@ -270,8 +270,6 @@ nav {
     word-wrap: break-word;
 }
 
-.paragraph_main {}
-
 .paragraph_main p {
     font-size: 15px;
     color: rgb(97, 97, 97);
@@ -571,22 +569,22 @@ footer {
 
 .gallery_image_big {
     display: flex;
-    margin:5px 20px;
+    margin: 5px 20px;
 }
 
 .gallery_image_big img {
-    width:100%;
+    width: 100%;
 }
 
 .gallery_image_small {
     display: flex;
-    margin:15px 0px;
+    margin: 15px 0px;
     justify-content: space-between;
-    margin-right:-11px;
+    margin-right: -11px;
 }
 
 .gallery_image_small img {
-    width:100%;
+    width: 100%;
 }
 
 .aside_right_styles {
@@ -926,7 +924,7 @@ fieldset textarea {
 
 .styles_text_columns_showcase {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto auto auto auto auto;
     gap: 15px 15px;
     grid-template-areas: "column_half_1 column_half_1 column_half_1 column_half_1 column_half_1 column_half_1 column_half_2 column_half_2 column_half_2 column_half_2 column_half_2 column_half_2" "column_third_1 column_third_1 column_third_1 column_third_1 column_third_2 column_third_2 column_third_2 column_third_2 column_third_3 column_third_3 column_third_3 column_third_3" "column_fourth_1 column_fourth_1 column_fourth_1 column_fourth_2 column_fourth_2 column_fourth_2 column_fourth_3 column_fourth_3 column_fourth_3 column_fourth_4 column_fourth_4 column_fourth_4" "column_fourth_5 column_fourth_5 column_fourth_5 column_fourth_6 column_fourth_6 column_fourth_6 column_half_3 column_half_3 column_half_3 column_half_3 column_half_3 column_half_3" "column_fourth_7 column_fourth_7 column_fourth_7 column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths" "column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_third_4 column_third_4 column_third_4 column_third_4";
