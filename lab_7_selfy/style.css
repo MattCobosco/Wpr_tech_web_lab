@@ -20,7 +20,7 @@ h2 {
     margin-bottom: 18px;
 }
 
-.site .body_index {
+.body_index {
     display: grid;
     grid-template-areas: "back" "content" "footer";
     grid-template-rows: 1050px min-content min-content;
@@ -523,8 +523,6 @@ footer {
 #main_container_indiv_post {
     margin-top: 50px;
 }
-
-.indiv_post {}
 
 .indiv_post img {
     position: relative;
