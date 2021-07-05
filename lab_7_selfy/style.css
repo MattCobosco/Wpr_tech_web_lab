@@ -20,7 +20,7 @@ h2 {
     margin-bottom: 18px;
 }
 
-.body_index {
+.site .body_index {
     display: grid;
     grid-template-areas: "back" "content" "footer";
     grid-template-rows: 1050px min-content min-content;
@@ -223,7 +223,7 @@ nav {
     border-left: 1px solid #cad2d7;
     padding-left: 45px;
     max-width: 15vw;
-    height: 435px;
+    height: fit-content;
 }
 
 .page_title {
@@ -518,6 +518,51 @@ footer {
     width: 80%;
     line-height: 140%;
     color: #656A6F;
+}
+
+#main_container_indiv_post {
+    margin-top: 50px;
+}
+
+.indiv_post {}
+
+.indiv_post img {
+    position: relative;
+    width: 90%;
+    border: #fff 6px solid;
+    transition: .3s all;
+    margin-top: 30px;
+}
+
+.indiv_post_title {
+    width: 90%;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: oblique;
+    line-height: 32px;
+    color: #3c4a52;
+}
+
+.indiv_post_desc {
+    width: 90%;
+    line-height: 140%;
+    color: #656A6F;
+}
+
+.indiv_post h4 {
+    font-size: 24px;
+    margin: 25px 0px 12px 0px;
+}
+
+.indiv_post h6 {
+    font-size: 14px;
+    color: #ffc000;
+    margin: 0;
+}
+
+#indiv_post_blockquote_img {
+    margin-top: 0;
 }
 
 .gallery {
