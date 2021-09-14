@@ -210,7 +210,7 @@ select {
 }
 
 .main_content {
-    grid-area: content;
+    grid-area: contact_center;
 }
 
 .main_content p {
@@ -237,6 +237,13 @@ select {
     padding-left: 45px;
     max-width: 15vw;
     height: fit-content;
+}
+.aside_right_contact {
+    grid-area: contact_bottom;
+    border-top: 1px solid #cad2d7;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
 }
 
 .page_title {
@@ -377,11 +384,14 @@ footer {
 }
 
 #contact_main {
-    padding-bottom: 20px;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: "contact_top""contact_center""contact_bottom";
 }
 
 .page_title_contact {
-    grid-area: title;
+    grid-area: contact_top;
 }
 
 .title_p {
@@ -416,7 +426,7 @@ footer {
 
 .contact_network_list {
     border-bottom: 1px solid #cad2d7;
-    width: 220px;
+    width: 100%;
 }
 
 .contact_network_list li {
