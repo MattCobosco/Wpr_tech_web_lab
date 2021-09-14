@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_min_1140px.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 1140px)" href="style_min_1140px.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 1140px)" href="style_max_1140px.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 830px)" href="style_max_830px.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 600px)" href="style_max_600px.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Selfy</title>
@@ -16,6 +20,15 @@
         <a href="/" class="logo_container">
             <img class="logo" src="images/logo@2x.png" alt="">
         </a>
+        <select name="nav_select" onchange="location = this.value;">
+            <option value="">Navigation</option>
+            <option value="/index.html">Home</option>
+            <option value="/about.html">About</option>
+            <option value="/styles.html">Styles</option>
+            <option value="/gallery.html">Gallery</option>
+            <option value="/blog.html">Blog</option>
+            <option value="/contact.html">Contact</option>
+        </select>
         <nav>
             <div class="nav_item"><a href="/index.html">Home</a></div>
             <div class="nav_item"><a href="/about.html">About</a></div>

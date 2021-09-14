@@ -61,11 +61,11 @@ header {
     grid-area: header;
     display: flex;
     flex-direction: column;
-    width: 72%;
+    width:90%;
     height: 52px;
     justify-content: space-between;
     padding-top: 60px;
-    padding-bottom: 45px;
+    padding-bottom: 80px;
     margin: 0 auto;
     margin-bottom: 12px;
     border-bottom: 1px solid #cad2d7;
@@ -76,7 +76,7 @@ header {
     overflow: hidden;
     grid-area: header;
     display: flex;
-    width: 91%;
+    width: 90%;
     height: 52px;
     justify-content: space-between;
     padding-top: 60px;
@@ -158,26 +158,28 @@ select {
     font-family: "Times New Roman", Times, serif;
     font-weight: lighter;
     font-style: italic;
-    font-size: 28px;
+    font-size: 29px;
     margin: 10px 0;
     color: #e2e2e2;
+    line-height: 0.9;
 }
 
 .quotes h4 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 15px 0;
 }
 
 .quotes p {
     font-size: 20px;
     max-width: 105%;
+    line-height: 1.2;
 }
 
 .main_container {
     grid-area: content;
     background-color: #f3f4f5;
     padding-bottom: 30px;
-    width: 72%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -192,7 +194,7 @@ select {
 }
 
 .paragraphs_main {
-    width: 91%;
+    width: 90%;
     margin: 30px auto;
     display: grid;
     grid-template-areas: "first" "second" "third";
@@ -204,7 +206,7 @@ select {
     display: grid;
     grid-template-areas: "aside_left top aside_right" "aside_left title aside_right" "aside_left content aside_right" "aside_left bottom aside_right";
     padding-bottom: 20px;
-    grid-template-columns: repeat(auto)
+    grid-template-columns: repeat(auto);
 }
 
 .main_content {
@@ -231,7 +233,7 @@ select {
 
 .aside_right {
     grid-area: aside_right;
-    border-left: 1px solid #cad2d7;
+    border-top: 1px solid #cad2d7;
     padding-left: 45px;
     max-width: 15vw;
     height: fit-content;
@@ -239,7 +241,7 @@ select {
 
 .page_title {
     grid-area: title;
-    margin: 0 20px;
+    margin: 0;
 }
 
 .title {
@@ -262,23 +264,27 @@ select {
     color: #757677;
 }
 
-.paragraphs {
+paragraphs {
     grid-area: bottom;
     display: flex;
+    flex-direction: column;
 }
 
 .paragraphs .half {
-    width: 47%;
     float: left;
-    margin: 0 45px 0 20px;
+    margin: 0 0 0 0;
+    width: 95%;
 }
 
 .half p {
     font-size: 16px;
     color: #656A6F;
     line-height: 1.5;
-    width: 85%;
     word-wrap: break-word;
+}
+
+.last p{
+    margin-left:0px;
 }
 
 .paragraph_main p {
@@ -324,7 +330,7 @@ select {
 
 footer {
     grid-area: footer;
-    width: 91%;
+    width: 90%;
     margin: 0 auto;
     background-color: #f3f4f5;
     padding: 50px 0;
@@ -381,7 +387,6 @@ footer {
 .title_p {
     font-size: 22px;
     line-height: 32px;
-    width: 74%;
     margin-top: 0px;
     margin-right: 4%;
     float: left;
@@ -646,9 +651,10 @@ footer {
 
 .aside_right_styles {
     grid-area: right_side;
-    border-left: 1px solid #cad2d7;
-    padding-left: 45px;
+    border-top: 1px solid #cad2d7;
     height: fit-content;
+    padding-left:0px;
+    border-left:0px;
 }
 
 .styles_list li {
@@ -678,14 +684,14 @@ footer {
     width: 100%;
     margin: 40px auto;
     display: grid;
-    grid-template-areas: "left_side right_side";
-    grid-template-columns: 75% 25%;
+    grid-template-areas: "left_side" "right_side";
+    grid-template-columns: 100%;
     padding-bottom: 10px;
 }
 
 .styles_showcase {
     grid-area: left_side;
-    width: 90%;
+    width: 100%;
 }
 
 .styles_showcase h1 {
@@ -792,11 +798,14 @@ footer {
 
 #images_showcase_images {
     display: grid;
-    grid-template-columns: repeat(6, 16.66%);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 1% 2%;
-    grid-template-areas: "full_img full_img full_img full_img full_img full_img" "half_img_1 half_img_1 half_img_1 half_img_2 half_img_2 half_img_2" "third_image_1 third_image_1 third_image_2 third_image_2 third_image_3 third_image_3";
-    padding-bottom: 20px;
+    grid-template-columns: 100%;
+    row-gap: 25px;
+    grid-template-areas: "full_img"
+    "half_img_1" 
+    "half_img_2"
+    "third_image_1"
+    "third_image_2"
+    "third_image_3";
 }
 
 .full_img {
@@ -976,15 +985,29 @@ fieldset textarea {
 #styles_form_btn {
     font-size: 18px;
     font-style: normal;
-    width: 22%;
+    width: fit-content;
 }
 
 .styles_text_columns_showcase {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 100%;
     gap: 15px 15px;
-    grid-template-areas: "column_half_1 column_half_1 column_half_1 column_half_1 column_half_1 column_half_1 column_half_2 column_half_2 column_half_2 column_half_2 column_half_2 column_half_2" "column_third_1 column_third_1 column_third_1 column_third_1 column_third_2 column_third_2 column_third_2 column_third_2 column_third_3 column_third_3 column_third_3 column_third_3" "column_fourth_1 column_fourth_1 column_fourth_1 column_fourth_2 column_fourth_2 column_fourth_2 column_fourth_3 column_fourth_3 column_fourth_3 column_fourth_4 column_fourth_4 column_fourth_4" "column_fourth_5 column_fourth_5 column_fourth_5 column_fourth_6 column_fourth_6 column_fourth_6 column_half_3 column_half_3 column_half_3 column_half_3 column_half_3 column_half_3" "column_fourth_7 column_fourth_7 column_fourth_7 column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths column_three_fourths" "column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_two_thirds column_third_4 column_third_4 column_third_4 column_third_4";
+    grid-template-areas: "column_half_1"
+    "column_half_2"
+    "column_third_1" 
+    "column_third_2" 
+    "column_third_3" 
+    "column_fourth_1" 
+    "column_fourth_2" 
+    "column_fourth_3" 
+    "column_fourth_4" 
+    "column_fourth_5"
+    "column_fourth_6"
+    "column_half_3"
+    "column_fourth_7"
+    "column_three_fourths"
+    "column_two_thirds"
+    "column_third_4";
 }
 
 .column_half_1 {
@@ -1163,7 +1186,7 @@ blockquote {
 }
 
 #no_idea_how_to_call_it {
-    width: 250px;
+    width: 100%;
     line-height: 1.5;
     color: #656A6F;
 }
