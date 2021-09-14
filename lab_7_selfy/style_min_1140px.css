@@ -199,11 +199,11 @@ select
     display: grid;
     grid-template-areas: "aside_left top aside_right" "aside_left title aside_right" "aside_left content aside_right" "aside_left bottom aside_right";
     padding-bottom: 20px;
-    grid-template-columns: repeat(auto)
+    grid-template-columns: repeat(auto);
 }
 
 .main_content {
-    grid-area: content;
+    grid-area: big_contact_center_bottom;
 }
 
 .main_content p {
@@ -224,8 +224,8 @@ select
     border: 6px #fff solid;
 }
 
-.aside_right {
-    grid-area: aside_right;
+.aside_right_contact {
+    grid-area: big_contact_aside_right;
     border-left: 1px solid #cad2d7;
     padding-left: 45px;
     max-width: 15vw;
@@ -362,11 +362,17 @@ footer {
 }
 
 #contact_main {
-    padding-bottom: 20px;
+    display: grid;
+    grid-template-areas: "big_contact_center_top big_contact_aside_right"
+    "big_contact_center_bottom big_contact_aside_right";
+}
+
+.aside_right_contact{
+    grid-area: big_contact_aside_right;
 }
 
 .page_title_contact {
-    grid-area: title;
+    grid-area: big_contact_center_top;
 }
 
 .title_p {

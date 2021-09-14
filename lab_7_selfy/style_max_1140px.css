@@ -203,7 +203,7 @@ select {
 }
 
 .main_content {
-    grid-area: content;
+    grid-area: big_contact_center_bottom;
 }
 
 .main_content p {
@@ -362,11 +362,17 @@ footer {
 }
 
 #contact_main {
-    padding-bottom: 20px;
+    display: grid;
+    grid-template-areas: "big_contact_center_top big_contact_aside_right"
+    "big_contact_center_bottom big_contact_aside_right";
+}
+
+.aside_right_contact{
+    grid-area: big_contact_aside_right;
 }
 
 .page_title_contact {
-    grid-area: title;
+    grid-area: big_contact_center_top;
 }
 
 .title_p {
