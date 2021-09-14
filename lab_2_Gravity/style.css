@@ -19,6 +19,7 @@ body {
 }
 #navigation {
     display: flex;
+    padding-right:30px;
 }
 #navigation a {
     text-decoration: none;
