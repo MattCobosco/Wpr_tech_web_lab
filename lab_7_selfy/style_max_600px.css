@@ -260,11 +260,11 @@ select {
 
 .post_title {
     font-size: 24px;
-    width: 80%;
+    width: 100%;
     color: #757677;
 }
 
-paragraphs {
+.paragraphs {
     grid-area: bottom;
     display: flex;
     flex-direction: column;
@@ -339,7 +339,6 @@ footer {
 }
 
 .footer_container {
-    width: 100%;
     margin: 0 auto;
     padding-bottom: 60px;
     display: flex;
@@ -363,6 +362,7 @@ footer {
 
 .footer_right {
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .social_icon img {
@@ -474,6 +474,7 @@ footer {
 
 #first_post {
     border-top: 0;
+    margin: 0;
 }
 
 #last_post {
@@ -482,13 +483,14 @@ footer {
 }
 
 .post {
-    width: 100%;
+    width: 90%;
     display: grid;
-    grid-template-areas: "post img";
-    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "post" "img";
+    grid-template-columns: 100%;
     padding: 50px 0;
     border-top: 1px solid #cad2d7;
     border-bottom: 1px solid #cad2d7;
+    margin: 0;
 }
 
 .post_details {
@@ -498,7 +500,7 @@ footer {
 .post img {
     grid-area: img;
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: auto;
     border: #fff 6px solid;
     transition: .3s all;
@@ -534,7 +536,7 @@ footer {
 }
 
 .post_desc {
-    width: 80%;
+    width: 100%;
     line-height: 140%;
     color: #656A6F;
 }
@@ -585,8 +587,8 @@ footer {
 .gallery {
     width: 100%;
     display: grid;
-    grid-template-areas: "details images";
-    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "details" "images";
+    grid-template-columns: 100%;
     margin: 0 auto;
 }
 
@@ -602,8 +604,8 @@ footer {
 .gallery_details {
     grid-area: details;
     width: fit-content;
-    padding-right: 20px;
     padding-top: 40px;
+    padding-right:0px;
 }
 
 .gallery_details p {
@@ -612,15 +614,13 @@ footer {
 }
 
 .gallery_image {
-    position: relative;
-    max-width: 45%;
-    margin-left: 32px;
+    width: 100%;
 }
 
 .gallery_images_container {
     grid-area: images;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .gallery_images_container ul {
@@ -631,7 +631,10 @@ footer {
 
 .gallery_image_big {
     display: flex;
-    margin: 5px 20px;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    width: 90%;
 }
 
 .gallery_image_big img {
@@ -640,13 +643,15 @@ footer {
 
 .gallery_image_small {
     display: flex;
-    margin: 15px 0px;
-    justify-content: space-between;
-    margin-right: -11px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .gallery_image_small img {
     width: 100%;
+    height:auto;
+    margin:0;
 }
 
 .aside_right_styles {
@@ -677,7 +682,7 @@ footer {
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -1em
+    margin-left: -1em;
 }
 
 .main_styles {
