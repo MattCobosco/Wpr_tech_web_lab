@@ -60,7 +60,7 @@ header {
     overflow: hidden;
     grid-area: header;
     display: flex;
-    width: 72%;
+    width: 1140px;
     height: 52px;
     justify-content: space-between;
     padding-top: 60px;
@@ -98,6 +98,11 @@ nav {
     display: flex;
     align-items: center;
     height: min-content;
+}
+
+select
+{
+    display:none;
 }
 
 .nav_item {
@@ -176,12 +181,12 @@ nav {
     justify-content: space-between;
     background-color: #f3f4f5;
     padding-bottom: 30px;
-    width: 100%;
+    width: 1140px;
     margin: 0 auto;
 }
 
 .paragraphs_main {
-    width: 72%;
+    width: 100%;
     margin: 30px auto;
     display: grid;
     grid-template-areas: "first second third";
@@ -313,7 +318,7 @@ nav {
 
 footer {
     grid-area: footer;
-    width: 72%;
+    width: 1140px;
     margin: 0 auto;
     background-color: #f3f4f5;
     padding: 50px 0;
