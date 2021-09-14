@@ -1080,10 +1080,7 @@ blockquote {
 }
 
 .blockquote_right {
-    display: block;
-    float: right;
-    width: 40%;
-    margin: 0 3% 3%;
+    width: 97%;
     text-align: left;
 }
 
