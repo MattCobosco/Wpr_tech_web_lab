@@ -83,6 +83,7 @@ body {
     height: 250px;
     justify-content: center;
     margin: 20px;
+    z-index: 0;
 }
 
 .growLeft {
@@ -95,6 +96,7 @@ body {
     animation-duration: 2s;
     animation-name: growLeftAnim;
     animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 .growRight {
@@ -107,6 +109,7 @@ body {
     animation-duration: 2s;
     animation-name: growRightAnim;
     animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 .shrinkLeft {
@@ -119,6 +122,7 @@ body {
     animation-duration: 2s;
     animation-name: shrinkLeft;
     animation-fill-mode: forwards;
+    z-index: -1;
 }
 
 .shrinkRight {
@@ -131,28 +135,53 @@ body {
     animation-duration: 2s;
     animation-name: shrinkRightAnim;
     animation-fill-mode: forwards;
+    z-index: -1;
 }
 
 @keyframes growRightAnim {
+    0% {
+        transform: scale(0.8) translateX(-20%);
+    }
+    50% {
+        transform: scale(1) translateX(0%);
+    }
     100% {
-        transform: scale(1.2) translateX(10%);
+        transform: scale(1.2) translateX(-20%);
     }
 }
 
 @keyframes growLeftAnim {
+    0% {
+        transform: scale(0.8) translateX(20%);
+    }
+    50% {
+        transform: scale(1) translateX(0%);
+    }
     100% {
-        transform: scale(1.2) translateX(-10%);
+        transform: scale(1.2) translateX(20%);
     }
 }
 
 @keyframes shrinkRightAnim {
+    0% {
+        transform: scale(1.2) translateX(-20%);
+    }
+    50% {
+        transform: scale(1) translateX(0%);
+    }
     100% {
-        transform: scale(0.8) translateX(10%);
+        transform: scale(0.8) translateX(-20%);
     }
 }
 
 @keyframes shrinkLeftAnim {
+    0% {
+        transform: scale(1.2) translateX(20%);
+    }
+    50% {
+        transform: scale(1) translateX(0%);
+    }
     100% {
-        transform: scale(0.8) translateX(-10%);
+        transform: scale(0.8) translateX(20%);
     }
 }
