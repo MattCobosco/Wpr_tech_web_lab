@@ -1,7 +1,7 @@
 body {
     background-color: #5b6775;
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 1000px;
     padding: 25%;
     position: relative;
 }
@@ -11,8 +11,6 @@ body {
     justify-content: center;
     position: relative;
     margin-bottom: 12%;
-    height: 300px;
-    width: 700px;
 }
 
 .name {
@@ -60,9 +58,10 @@ body {
     padding: 5px 0;
 }
 
-.buttonContainer {
+#buttonContainer {
     display: flex;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #switchButton {
